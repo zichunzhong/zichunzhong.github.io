@@ -1,0 +1,39 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0086)http://faculty.cs.tamu.edu/schaefer/teaching/441_Spring2007/Instructions/glut_NET.html -->
+<HTML><HEAD><TITLE>When creating an OpenGL</TITLE>
+<META http-equiv=Content-Language content=en-us>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.6000.16705" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId></HEAD>
+<BODY>
+<P><B>These instructions explain how to create and run GLUT applications in the 
+  computer labs using Visual C++ 2005/2008/2010. Some instructions for installing and using 
+  the GLUT and OpenGL libraries for personal computers or computers without the 
+  proper files installed can be found <A 
+href="http://www.cs.wayne.edu/zzhong/GLUTSystems.html">here</A>.</B></P>
+<P>&nbsp;</P>
+<P>When creating an OpenGL\GLUT application, no OS code is required since everything 
+  is, conveniently enough, handled by the GLUT libraries. When using Visual C++ 
+  2005, the best way to start is with a bare-bones Win32 Console Application. 
+  Selecting File &gt; New will allow you to create a simple Win32 Console Application 
+  Project.</P>
+<P><img src="GLUT/2005NewProject.jpg" width="681" height="469"></P>
+<P>Give the project a name and location and select the default settings from then 
+  on. You'll be faced with a empty Visual Studio 2005 project. </P>
+<P><img src="GLUT/2005NewProject2.jpg" width="615" height="437"></P>
+<P>If Visual Studio does not give you a prepared C++ source file you can create 
+  one and add it to your project. When creating your source and header files, 
+  make sure to include the &lt;GL/glut.h&gt; header file. In order to avoid conflicts 
+  between header files, you should make &lt;GL/glut.h&gt; or &lt;glut.h&gt; the 
+  <I>last</I> header file you include - if it's listed before others, it sometimes 
+  will give an error about function redefinition. This header includes all other 
+  necessary headers required to use OpenGL in Windows.</P>
+<P>The following steps may not be necessary in the computer labs, but if you run 
+  into problems, you should follow them. The only thing necessary to compile a 
+  GLUT application is to link to the necessary libraries. These are OPENGL32.LIB, 
+  GLU32.LIB, and GLUT32.LIB. Select Project &gt; "ProjectName" Properties and 
+  move to the Linker folder. You can enter the necessary files into the Additional 
+  Dependencies textbox.</P>
+<P><img src="GLUT/2005ProjectSettings.jpg" width="749" height="521"></P>
+</BODY></HTML>
