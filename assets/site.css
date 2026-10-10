@@ -16,7 +16,7 @@ body {
   color:var(--ink);
   font-family:Arial,Helvetica,sans-serif;
   font-size:16px;
-  line-height:1.7}
+  line-height:1.55}
 a {
   color:var(--green);
   text-underline-offset:4px}
@@ -43,11 +43,11 @@ a:focus-visible,summary:focus-visible {
 .header-inner {
   max-width:1200px;
   margin:auto;
-  padding:22px 40px;
+  padding:14px 24px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:30px}
+  gap:16px}
 .wordmark {
   font-family:Georgia,serif;
   font-size:23px;
@@ -68,28 +68,28 @@ nav a {
 main,footer {
   max-width:1200px;
   margin:auto;
-  padding:0 40px}
+  padding:0 32px}
 .hero {
   display:grid;
-  grid-template-columns:1fr 300px;
-  gap:90px;
-  padding:85px 0 70px;
+  grid-template-columns:1fr 180px;
+  gap:36px;
+  padding:32px 0;
   align-items:center}
 .eyebrow {
   font-size:10px;
   font-weight:700;
   letter-spacing:2px;
   color:var(--green);
-  margin:0 0 20px}
+  margin:0 0 10px}
 h1,h2,h3,p {
   margin-top:0}
 h1 {
   font-family:Georgia,serif;
   font-weight:400;
-  font-size:60px;
+  font-size:42px;
   letter-spacing:-2px;
   line-height:1.12;
-  margin-bottom:24px}
+  margin-bottom:12px}
 h1 span {
   display:block;
   font-size:39px;
@@ -99,34 +99,35 @@ h1 span {
 h2 {
   font-family:Georgia,serif;
   font-weight:400;
-  font-size:38px;
+  font-size:28px;
   letter-spacing:-1px;
   line-height:1.2;
-  margin-bottom:24px}
+  margin-bottom:16px}
 h3 {
   font-size:19px;
   line-height:1.4}
 .hero-role {
   font-size:16px;
   font-weight:700;
-  margin-bottom:10px}
+  margin-bottom:6px}
 .hero-description {
   color:var(--muted);
   max-width:540px;
-  font-size:17px}
+  font-size:15px;
+  margin-bottom:12px}
 .hero-actions {
   display:flex;
-  gap:28px;
+  gap:20px;
   align-items:center;
-  margin:30px 0}
+  margin:16px 0}
 .button {
   display:inline-flex;
   align-items:center;
-  gap:30px;
+  gap:18px;
   background:var(--green);
   color:white;
   text-decoration:none;
-  padding:13px 21px;
+  padding:9px 16px;
   font-size:13px;
   white-space:nowrap}
 .button:hover {
@@ -142,25 +143,25 @@ h3 {
   margin-bottom:0}
 .portrait-wrap {
   background:#e8ede3;
-  padding:23px 23px 0;
+  padding:10px 10px 0;
   position:relative}
 .portrait-wrap:before {
   content:'';
   position:absolute;
-  inset:-14px 14px 14px -14px;
+  inset:-6px 6px 6px -6px;
   border:1px solid #bdcbbb;
   z-index:-1}
 .portrait {
   width:100%;
-  height:340px;
+  height:220px;
   object-fit:cover;
   object-position:center;
   display:block}
 .portrait-caption {
   display:flex;
   flex-direction:column;
-  padding:19px 0;
-  font-size:11px}
+  padding:10px 0;
+  font-size:10px}
 .portrait-caption span:first-child {
   font-size:9px;
   letter-spacing:1.5px;
@@ -175,12 +176,12 @@ h3 {
   letter-spacing:1.5px;
   color:var(--muted)}
 .section {
-  padding:65px 0;
+  padding:30px 0;
   border-bottom:1px solid var(--line)}
 .about {
   display:grid;
-  grid-template-columns:250px 1fr;
-  gap:60px}
+  grid-template-columns:180px 1fr;
+  gap:28px}
 .prose {
   font-size:15px;
   color:var(--muted)}
@@ -199,11 +200,12 @@ h3 {
 .research-grid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:36px;
-  margin:35px 0 45px}
+  gap:24px;
+  margin:16px 0 20px}
 .research-grid article {
   border-top:1px solid var(--line);
-  padding-top:18px}
+  padding-top:12px;
+  margin-top:12px}
 .topic-number {
   font-family:Georgia,serif;
   font-size:25px;
@@ -212,20 +214,21 @@ h3 {
   margin-bottom:22px}
 .research-grid p {
   color:var(--muted);
-  font-size:14px}
+  font-size:14px;
+  margin-bottom:0}
 .opportunity {
   background:#e9efe3;
   display:flex;
-  gap:40px;
+  gap:24px;
   align-items:center;
-  padding:32px}
+  padding:18px 22px}
 .opportunity .eyebrow {
   margin-bottom:10px}
 .opportunity h3 {
   font-family:Georgia,serif;
-  font-size:27px;
+  font-size:22px;
   font-weight:400;
-  margin-bottom:10px}
+  margin-bottom:6px}
 .opportunity p:last-child {
   font-size:14px;
   margin-bottom:0;
@@ -237,27 +240,27 @@ h3 {
   gap:20px}
 .publication {
   display:grid;
-  grid-template-columns:230px 1fr;
-  gap:32px;
-  padding:27px 0;
+  grid-template-columns:150px 1fr;
+  gap:20px;
+  padding:16px 0;
   border-top:1px solid var(--line);
   align-items:center}
 .publication img {
   width:100%;
-  height:150px;
+  height:100px;
   object-fit:contain;
   background:white;
-  padding:10px}
+  padding:6px}
 .publication h3 {
   font-family:Georgia,serif;
-  font-size:22px;
+  font-size:18px;
   font-weight:400;
-  margin-bottom:10px}
+  margin-bottom:6px}
 .authors {
   font-size:12px;
   color:var(--muted);
   line-height:1.6;
-  margin-bottom:8px}
+  margin-bottom:4px}
 .venue {
   font-size:12px;
   line-height:1.8;
@@ -268,9 +271,9 @@ h3 {
   display:inline-block}
 .archive {
   border-top:1px solid var(--line);
-  margin-top:18px}
+  margin-top:10px}
 .archive summary {
-  padding:20px 0;
+  padding:12px 0;
   cursor:pointer;
   font-size:15px;
   font-weight:700}
@@ -280,19 +283,19 @@ h3 {
   font-size:12px;
   color:var(--muted)}
 .archive[open]>summary {
-  margin-bottom:10px}
+  margin-bottom:4px}
 .teaching-content {
   columns:2;
   column-gap:60px}
 .contact {
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:80px}
+  gap:32px}
 .contact h2 {
-  font-size:48px}
+  font-size:32px}
 .contact-email {
   font-family:Georgia,serif;
-  font-size:24px}
+  font-size:20px}
 .contact-details {
   font-size:14px;
   color:var(--muted)}
@@ -303,20 +306,16 @@ footer {
   display:flex;
   justify-content:space-between;
   gap:20px;
-  padding-top:25px;
-  padding-bottom:25px;
+  padding-top:18px;
+  padding-bottom:18px;
   font-size:11px;
   color:var(--muted)}
 footer a {
   text-decoration:none}
-@media(min-width:1400px) {
-  .hero {
-  padding-top:100px;
-  padding-bottom:90px}
-}
+
 @media(max-width:900px) {
   .header-inner {
-  padding:18px 25px;
+  padding:14px 24px;
   flex-wrap:wrap;
   gap:16px}
 nav {
@@ -324,103 +323,67 @@ nav {
   flex-wrap:wrap}
 main,footer {
   padding-left:25px;
-  padding-right:25px}
+  padding-right:25px;
+  padding:0 32px}
 .hero {
-  grid-template-columns:1fr 230px;
-  gap:40px;
-  padding:55px 0}
+  grid-template-columns:1fr 180px;
+  gap:36px;
+  padding:32px 0}
 h1 {
-  font-size:46px}
+  font-size:42px;
+  margin-bottom:12px}
 h1 span {
   font-size:31px}
 .portrait {
-  height:285px}
+  height:220px}
 .about {
   grid-template-columns:180px 1fr;
-  gap:30px}
+  gap:28px}
 .publication {
-  grid-template-columns:190px 1fr;
-  gap:24px}
+  grid-template-columns:150px 1fr;
+  gap:20px;
+  padding:16px 0}
 .contact {
-  gap:30px}
+  gap:32px}
 .contact-email {
   font-size:20px}
 }
 @media(max-width:600px) {
-  html {
-  scroll-padding-top:150px}
-.header-inner {
-  padding:15px 20px}
-.wordmark {
-  font-size:21px}
-nav {
-  width:100%;
-  gap:9px 19px}
-nav a {
-  font-size:12px}
-main,footer {
-  padding-left:20px;
-  padding-right:20px}
-.hero {
-  display:flex;
-  flex-direction:column;
-  align-items:stretch;
-  gap:35px;
-  padding:40px 0}
-.hero-copy {
-  order:0}
-h1 {
-  font-size:45px}
-h1 span {
-  font-size:31px}
-.hero-description {
-  font-size:15px}
-.portrait-wrap {
-  max-width:270px;
-  margin:0 auto;
-  width:100%}
-.portrait {
-  height:300px}
-.section-rule span:last-child {
-  display:none}
-.section {
-  padding:42px 0}
-.about,.research-grid,.contact {
-  display:block}
-.research-grid article {
-  margin-top:24px}
-.opportunity {
-  display:block;
-  padding:24px}
-.opportunity .button {
-  margin-top:22px}
-.heading-row {
-  display:block}
-.heading-row>.text-link {
-  display:inline-block;
-  margin-bottom:20px}
-h2 {
-  font-size:32px}
-.publication {
-  grid-template-columns:1fr;
-  gap:16px}
-.publication img {
-  height:180px}
-.publication h3 {
-  font-size:21px}
-.teaching-content {
-  columns:1}
-.contact-details {
-  margin-top:35px}
-.contact-email {
-  font-size:20px}
-.contact h2 {
-  font-size:38px}
-footer {
-  display:block}
-footer a {
-  display:block;
-  margin-top:8px}
+  html { scroll-padding-top:130px; }
+  .header-inner { padding:12px 18px; }
+  .wordmark { font-size:20px; }
+  nav { width:100%; gap:8px 18px; }
+  nav a { font-size:12px; }
+  main,footer { padding-left:18px; padding-right:18px; }
+  .hero { grid-template-columns:minmax(0,1fr) 92px; gap:18px; padding:26px 0; align-items:start; }
+  .hero-copy { display:contents; }
+  .hero-copy>.eyebrow { grid-column:1/-1; margin:0; font-size:9px; }
+  h1 { grid-column:1; grid-row:2; font-size:34px; letter-spacing:-1px; margin:0; }
+  .hero-role { grid-column:1; grid-row:3; font-size:14px; margin:0; }
+  .portrait-wrap { grid-column:2; grid-row:2/4; width:92px; padding:0; }
+  .portrait { height:auto; }
+  .portrait-caption,.portrait-wrap:before { display:none; }
+  .hero-description,.hero-actions,.affiliation { grid-column:1/-1; margin:0; }
+  .hero-description { font-size:15px; }
+  .hero-actions { flex-wrap:wrap; gap:12px 20px; }
+  .section { padding:24px 0; }
+  .about,.contact { display:block; }
+  h2 { font-size:26px; margin-bottom:14px; }
+  .research-grid { grid-template-columns:1fr; gap:12px; margin:12px 0 18px; }
+  .research-grid article { margin:0; padding-top:10px; }
+  .research-grid h3 { margin-bottom:4px; font-size:17px; }
+  .opportunity { display:block; padding:18px; }
+  .opportunity .button { margin-top:14px; }
+  .heading-row { align-items:baseline; flex-wrap:wrap; gap:0 15px; margin-bottom:12px; }
+  .publication { grid-template-columns:76px minmax(0,1fr); gap:12px; padding:14px 0; align-items:start; }
+  .publication img { height:70px; padding:3px; }
+  .publication h3 { font-size:17px; line-height:1.35; }
+  .authors,.venue { font-size:12px; }
+  .teaching-content { columns:1; }
+  .contact-details { margin-top:22px; }
+  .contact-email { font-size:19px; overflow-wrap:anywhere; }
+  .contact h2 { font-size:28px; }
+  footer { display:flex; flex-wrap:wrap; gap:8px 20px; }
 }
 @media(prefers-reduced-motion:reduce) {
   html {
@@ -437,3 +400,12 @@ footer a {
   font-size:13px;
   color:var(--muted)}
 
+
+.bio-details { margin-top:10px; }
+.bio-details summary { cursor:pointer; font-size:13px; font-weight:700; color:var(--green); padding:5px 0; }
+.bio-details[open] summary { margin-bottom:10px; }
+.prose p { margin-bottom:12px; }
+.research-grid h3 { margin-bottom:8px; }
+.recent-courses br+br { display:none; }
+.recent-courses b { display:inline-block; margin-top:10px; }
+.contact-details p { margin-bottom:10px; }
